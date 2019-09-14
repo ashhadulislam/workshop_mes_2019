@@ -4,7 +4,7 @@
 Sep 21st,2019  MES, India
 
 
-![Speakers](dev_pros.png?raw=true "Speakers")
+![Speakers](dev_props.png?raw=true "Speakers")
 
 
 
