@@ -73,7 +73,7 @@ def save_gestures(gesture_id):
         thresh = thresh[y:y + h, x:x + w]
         contours = cv2.findContours(thresh.copy(), cv2.RETR_TREE, cv2.CHAIN_APPROX_NONE)[1]
 
-        # print("contours are ",contours)
+        print("contours are ",contours)
 
         if len(contours) > 0:
             contour = max(contours, key=cv2.contourArea)

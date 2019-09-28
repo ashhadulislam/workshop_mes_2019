@@ -115,6 +115,7 @@ def save_gestures(gesture_id):
 #from recorded gestures
 
 from scipy.misc import imread
+# from scipy.imageio import imread
 import numpy as np
 import pandas as pd
 import os

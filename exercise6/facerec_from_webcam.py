@@ -13,12 +13,12 @@ import numpy as np
 video_capture = cv2.VideoCapture(0)
 
 # Load a sample picture and learn how to recognize it.
-ismah_image = face_recognition.load_image_file("ismah.jpeg")
-ismah_face_encoding = face_recognition.face_encodings(ismah_image)[0]
+fahim_image = face_recognition.load_image_file("fahim.jpeg")
+fahim_face_encoding = face_recognition.face_encodings(fahim_image)[0]
 
 # Load a second sample picture and learn how to recognize it.
-naadiyah_image = face_recognition.load_image_file("naadiyah.jpeg")
-naadiyah_face_encoding = face_recognition.face_encodings(naadiyah_image)[0]
+qazi_image = face_recognition.load_image_file("qazi.jpeg")
+qazi_face_encoding = face_recognition.face_encodings(qazi_image)[0]
 
 # Load a third sample picture and learn how to recognize it.
 ashhad_image = face_recognition.load_image_file("ashhad.jpg")
@@ -26,13 +26,13 @@ ashhad_face_encoding = face_recognition.face_encodings(ashhad_image)[0]
 
 # Create arrays of known face encodings and their names
 known_face_encodings = [
-    ismah_face_encoding,
-    naadiyah_face_encoding,
+    fahim_face_encoding,
+    qazi_face_encoding,
     ashhad_face_encoding
 ]
 known_face_names = [
-    "Ismah Islam",
-    "Naadiyah Islam",
+    "Fahim Ahamed",
+    "Qazi Haque",
     "Ashhadul Islam"
 ]
 
@@ -83,3 +83,4 @@ while True:
 # Release handle to the webcam
 video_capture.release()
 cv2.destroyAllWindows()
+
